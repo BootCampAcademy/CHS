@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CHS/src/main/java/com/nbs/Application.java.txt&apos; to &apos;Application.java&apos;" description="Rename resource &apos;Application.java.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/nbs/Application.java.txt" name="Application.java" stamp="1571995753061" updateReferences="true"/>
+</session>
