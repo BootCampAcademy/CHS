@@ -3,6 +3,7 @@ package com.nbs.business;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.nbs.persistence.domain.CHS;
 import com.nbs.persistence.repository.CHSRepository;
 
 import antlr.collections.List;
@@ -18,15 +19,15 @@ public class CHSService {
 		
 		
 		public CHS saveCHS(CHS CHSToSave) {
-			return repository.save(CHSToSave)
+			return repository.save(CHSToSave);
 		}
 		
 		public CHS updateCHS(CHS CHSToUpdate) {
-			return repository.save(CHSToUpdate)
+			return repository.save(CHSToUpdate);
 		}
 		
 		public String deleteCHS (Long CHSIdToDelete) {
-			repository.deletebyId(CHSToDelete);
+			repository.deleteById(CHSIdToDelete);
 			return "you have been deleted";
 		}
 		
