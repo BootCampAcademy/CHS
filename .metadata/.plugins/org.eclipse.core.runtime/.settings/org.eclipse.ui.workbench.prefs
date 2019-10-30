@@ -1,3 +1,5 @@
 //org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
+editors=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<editors>\r\n<descriptor class\="org.eclipse.ui.editors.text.TextEditor" id\="org.eclipse.ui.DefaultTextEditor" image\="$nl$/icons/full/obj16/file_obj.png" internal\="true" label\="Text Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.ui.editors"/>\r\n</editors>
+resourcetypes=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<editors version\="3.1">\r\n<info contentType\="userCreated1572003917951">\r\n<editor id\="org.eclipse.ui.DefaultTextEditor"/>\r\n</info>\r\n</editors>
