@@ -29,19 +29,19 @@ function renderToScreen(jsData){
 getAllCHS();
 
 function addCHS() {
-	var ID = document.getElementById('ID').value;
-	var Position = document.getElementById('Position').value;
-	var Name = document.getElementById('Name').value;
-	var PostCode= document.getElementById('PostCode').value;
-	var URL= document.getElementById('URL').value;
+	var ID = document.getElementById('id').value;
+	var Position = document.getElementById('position').value;
+	var Name = document.getElementById('name').value;
+	var PostCode= document.getElementById('postCode').value;
+	var URL= document.getElementById('url').value;
 	
 	var CHS = new Object();
 
-	CHS.ID = ID;
-	CHS.Position= Position;
-	CHS.Name= Name;
-	CHS.PostCode= PostCode;
-	CHS.URL= URL;
+	CHS.id = ID;
+	CHS.position= Position;
+	CHS.name= Name;
+	CHS.postCode= PostCode;
+	CHS.url= URL;
 
 	var CHSJSON = JSON.stringify(CHS);
 
