@@ -19,7 +19,7 @@ public class CHSService {
 		}
 		
 		
-		public CHS saveCHS(CHS CHSToSave) {
+		public CHS addCHS(CHS CHSToSave) {
 			return repository.save(CHSToSave);
 		}
 		

@@ -34,7 +34,7 @@ public class CHSController {
 	
 	@PostMapping
 	public CHS addCHS(@RequestBody CHS CHSToSave) {
-		return chsservice.saveCHS(CHSToSave);
+		return chsservice.addCHS(CHSToSave);
 	}
 	
 	@PutMapping
