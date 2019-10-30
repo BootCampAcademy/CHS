@@ -1,0 +1,116 @@
+Skip to content
+
+
+  
+Pull requests 
+Issues 
+Marketplace 
+Explore 
+
+
+ 
+
+
+
+Watch 
+1 
+Star 
+0 
+Fork 
+0 
+
+scrappy1987/nbs-trainer-solution 
+Code 
+Issues 0 
+Pull requests 0 
+Projects 0 
+Wiki 
+Security 
+Insights 
+Branch: master 
+nbs-trainer-solution/.gitignore 
+Find file 
+Copy path 
+ scrappy1987 initial commit 
+8737db6 2 days ago 
+0 contributors 
+31 lines (26 sloc) 309 Bytes 
+Raw
+Blame
+History
+
+
+HELP.md
+
+/target/
+
+!.mvn/wrapper/maven-wrapper.jar
+
+/bin/
+
+
+
+### STS ###
+
+.apt_generated
+
+.classpath
+
+.factorypath
+
+.project
+
+.settings
+
+.springBeans
+
+.sts4-cache
+
+
+
+### IntelliJ IDEA ###
+
+.idea
+
+*.iws
+
+*.iml
+
+*.ipr
+
+
+
+### NetBeans ###
+
+/nbproject/private/
+
+/nbbuild/
+
+/dist/
+
+/nbdist/
+
+/.nb-gradle/
+
+/build/
+
+
+
+### VS Code ###
+
+.vscode/
+
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
