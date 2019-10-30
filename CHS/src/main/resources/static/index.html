@@ -7,8 +7,40 @@
 
  <tr>
     	
-   <form action= "addCHS()">
- <fieldset>	
+		
+<form>
+<fieldset>		
+   <legend>Add new Curry House:</legend>
+            <div class="form-group">
+                <label for="id">ID:</label> <input type="text"
+                    class="form-control" id="id" required>
+            </div>
+			<br>
+            <div class="form-group">
+                <label for="name">Name:</label> <input type="text"
+                    class="form-control" id="name" required>
+            </div>
+			<br>
+            <div class="form-group">
+                <label for="position">Position:</label> <input type="text"
+                    class="form-control" id="position" required>
+            </div>
+			<br>
+			<div class="form-group">
+                <label for="url">URL:</label> <input type="text"
+                    class="form-control" id="url" required>
+            </div>
+			<br>
+			<div class="form-group">
+                <label for="post_code">PostCode:</label> <input type="text"
+                    class="form-control" id="post_code" required>
+            </div>
+			<br>
+            <input class="btn btn-primary pull-right" name="submit" type="submit" value="submit" onclick="addCHS"/>
+			 </fieldset>
+        </form>
+ <!-- <form action= "addCHS()">
+ <fieldset>		
    <legend>Add new Curry House:</legend>
    ID:
    <input type="text" name="ID" value="Unique ID">
@@ -23,6 +55,7 @@ PostCode:
    <input type="submit" onclick="addCHS()" value="Submit">
  </fieldset>
 </form>
+!-->
 
   </tr>
   
