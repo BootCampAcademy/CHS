@@ -3,7 +3,7 @@ function getAllCHS() {
 
 	let request = new XMLHttpRequest();
 	request.open("GET", "http://localhost:8080/CHS");
-	
+	//request.open("GET", "http:" +location.host+:"8080"+"/CHS");
 	request.onload = function (){
 		renderToScreen(JSON.parse(request.response));
 	}
@@ -64,7 +64,7 @@ function deleteCHS() {
 
 	let request = new XMLHttpRequest();
 	request.open("DELETE", "http://localhost:8080/CHS/" + ID);
-	
+		//request.open("DELETE", "http:" +location.host+:"8080"+"/CHS"+"ID");
 	request.onload = function (){
 		renderToScreen(JSON.parse(request.response));
 	}
