@@ -1,12 +1,13 @@
 package com.nbs.business;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.nbs.persistence.domain.CHS;
 import com.nbs.persistence.repository.CHSRepository;
 
-import antlr.collections.List;
 
 @Service
 public class CHSService {

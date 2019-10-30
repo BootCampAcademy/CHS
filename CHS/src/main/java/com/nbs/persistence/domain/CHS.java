@@ -7,55 +7,57 @@ import javax.persistence.Id;
 
 @Entity
 public class CHS {
-	
-@Id
-@GeneratedValue (strategy= GenerationType.IDENTITY)
-	private int ID;
-	private int Position;
-	private String Name;
-	private String PostCode;
-	private String URL;
-	
-	public CHS(int ID, int Position, String Name, String PostCode, String URL) {
-}
 
-	public int getID() {
-		return ID;
+	@Id
+	@GeneratedValue
+	private Long id;
+	private int position;
+	private String name;
+	private String postCode;
+	private String url;
+
+	public CHS() {
+
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public int getPosition() {
-		return Position;
+		return position;
 	}
 
 	public void setPosition(int position) {
-		Position = position;
+		this.position = position;
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 	public String getPostCode() {
-		return PostCode;
+		return postCode;
 	}
 
 	public void setPostCode(String postCode) {
-		PostCode = postCode;
+		this.postCode = postCode;
 	}
 
-	public String getURL() {
-		return URL;
+	public String getUrl() {
+		return url;
 	}
 
-	public void setURL(String uRL) {
-		URL = uRL;
+	public void setUrl(String url) {
+		this.url = url;
 	}
+
 }
