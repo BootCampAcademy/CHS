@@ -115,7 +115,6 @@ function renderToScreen(jsData){
 	// 	},
 	// 	dataType : 'json'
 	// });
-}
 
 
 
