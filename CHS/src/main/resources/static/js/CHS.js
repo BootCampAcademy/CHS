@@ -3,7 +3,7 @@ function getAllCHS() {
 
 	let request = new XMLHttpRequest();
 	request.open("GET", "http://localhost:8080/CHS");
-
+	
 	request.onload = function (){
 		renderToScreen(JSON.parse(request.response));
 	}
