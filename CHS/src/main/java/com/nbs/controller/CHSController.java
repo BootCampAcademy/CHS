@@ -1,6 +1,9 @@
-package com.nbs.rest;
+package com.nbs.controller;
+
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,38 +13,39 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nbs.business.CHS;
-import com.nbs.business.CHSService;
 
-import antlr.collections.List;
+import com.nbs.business.CHSService;
+import com.nbs.persistence.domain.CHS;
+
 
 @RestController
-@RequestMapping("/CHSapp")
+@RequestMapping("/CHS")
+@CrossOrigin("*")
 public class CHSController {
 
 	
 	@Autowired
 	private CHSService chsservice;
 	
-	@GetMapping(value="CHS")
+	@GetMapping
 	public List<CHS> getAllCHS(){
 		return chsservice.getAllCHS();
 	}
 	
-	@PostMapping(value="CHS")
-	public CHS saveCHS(@RequestBody CHS CHSToSave) {
-		return chsservice.save(CHSToSave)
+	@PostMapping
+	public CHS addCHS(@RequestBody CHS CHSToSave) {
+		return chsservice.saveCHS(CHSToSave);
 	}
 	
-	@PutMapping(value="CHS")
+	@PutMapping
 	public CHS updateCHS(@RequestBody CHS CHSToUpdate) {
-		return chsservice.save(CHSToUpdate)
+		return chsservice.updateCHS(CHSToUpdate);
 	}
 	
-	@DeleteMapping(value="CHS/{CHSIdToDelete")
+	@DeleteMapping(value="/{CHSIdToDelete}")
 	public String deleteCHS (@PathVariable Long CHSIdToDelete) {
-		chsservice.deletebyId(CHSIdToDelete);
-		return "you have been deleted";
+		chsservice.deleteCHS(CHSIdToDelete);
+		return "Curry House entry has been deleted";
 	}
 	
 }
