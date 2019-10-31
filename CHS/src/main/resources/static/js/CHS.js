@@ -19,22 +19,28 @@ function renderToScreen(jsData){
 
 	for (let curryHouse of jsData){
 		let row = document.createElement("tr");
+		row.className="row";
+
 		let idCell = document.createElement("td");
+		idCell.className="col-3";
 		let idCenter = document.createElement("center");
 		idCenter.innerText = curryHouse.id;
 		idCell.appendChild(idCenter);
 		row.append(idCell);
 
 		let name = document.createElement("td");
+		name.className="col-3";
 		let nameCenter = document.createElement("center");
 		nameCenter.innerText = curryHouse.name;
 		name.appendChild(nameCenter);
 		row.appendChild(name);
 
 		let imageCell = document.createElement("td");
+		imageCell.className="col-3";
 		let imageCenter = document.createElement("center");
 		let image = document.createElement("img");
-				image.setAttribute("src", curryHouse.url);
+		image.className="w-100";
+		image.setAttribute("src", curryHouse.url);
 		imageCenter.appendChild(image);
 		imageCell.appendChild(imageCenter);	
 		// img.height = 150;
@@ -43,6 +49,7 @@ function renderToScreen(jsData){
 		
 
 		let postcode = document.createElement("td");
+		postcode.className="col-3";
 		let postcodeCenter = document.createElement("center");
 		postcodeCenter.innerText = curryHouse.postCode;
 		postcode.appendChild(postcodeCenter);
