@@ -34,10 +34,13 @@ function renderToScreen(jsData){
 		let imageCell = document.createElement("td");
 		let imageCenter = document.createElement("center");
 		let image = document.createElement("img");
-		image.setAttribute("src", curryHouse.url);
+				image.setAttribute("src", curryHouse.url);
 		imageCenter.appendChild(image);
-		imageCell.appendChild(imageCenter);
+		imageCell.appendChild(imageCenter);	
+		// img.height = 150;
+		// img.width = 150;
 		row.appendChild(imageCell)
+		
 
 		let postcode = document.createElement("td");
 		let postcodeCenter = document.createElement("center");
@@ -74,7 +77,7 @@ function deleteCHS() {
 
 	let request = new XMLHttpRequest();
 	// request.open("DELETE", "http://localhost:8081/CHS/" + ID);
-		request.open("DELETE", "http:"+location.hostname+":8081/CHS/ID");
+		request.open("DELETE", "http:"	+location.hostname+":8081/CHS/ID");
 	request.onload = function (){
 		renderToScreen(JSON.parse(request.response));
 	}
