@@ -36,7 +36,7 @@ function renderToScreen(jsData){
 		row.appendChild(name);
 
 		let position = document.createElement("td");
-		position.className="col-4";
+		position.className="col-2";
 		let positionCenter = document.createElement("center");
 		positionCenter.innerText = curryHouse.position;
 		position.appendChild(positionCenter);
