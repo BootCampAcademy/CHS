@@ -43,10 +43,10 @@ function renderToScreen(jsData){
 		row.appendChild(position);
 
 		let imageCell = document.createElement("td");
-		imageCell.className="col-1";
+		imageCell.className="col-2";
 		let imageCenter = document.createElement("center");
 		let image = document.createElement("img");
-		image.className="w-100";
+		image.className="w-150";
 		image.setAttribute("src", curryHouse.url);
 		imageCenter.appendChild(image);
 		imageCell.appendChild(imageCenter);	
