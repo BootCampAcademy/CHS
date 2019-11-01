@@ -62,7 +62,7 @@ function renderToScreen(jsData){
 		postcode.appendChild(postcodeCenter);
 		row.appendChild(postcode);
 
-		table.appendChild(row);
+		table.append(row);
 	}
 }
 
