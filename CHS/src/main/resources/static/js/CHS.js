@@ -52,7 +52,7 @@ function renderToScreen(jsData){
 		imageCell.appendChild(imageCenter);	
 		// img.height = 150;
 		// img.width = 150;
-		row.appendChild(imageCell)
+		row.appendChild(imageCell);
 		
 
 		let postcode = document.createElement("td");
