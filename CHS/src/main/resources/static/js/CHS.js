@@ -46,7 +46,7 @@ function renderToScreen(jsData){
 		imageCell.className="col-2";
 		let imageCenter = document.createElement("center");
 		let image = document.createElement("img");
-		image.className="w-5O";
+		image.className="w-100";
 		image.setAttribute("src", curryHouse.url);
 		imageCenter.appendChild(image);
 		imageCell.appendChild(imageCenter);	
