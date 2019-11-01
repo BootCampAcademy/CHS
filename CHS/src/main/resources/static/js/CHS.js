@@ -29,7 +29,7 @@ function renderToScreen(jsData){
 		//row.append(idCell);
 
 		let name = document.createElement("td");
-		name.className="col-4";
+		name.className="col-1";
 		let nameCenter = document.createElement("center");
 		nameCenter.innerText = curryHouse.name;
 		name.appendChild(nameCenter);
@@ -43,7 +43,7 @@ function renderToScreen(jsData){
 		row.appendChild(position);
 
 		let imageCell = document.createElement("td");
-		imageCell.className="col-4";
+		imageCell.className="col-1";
 		let imageCenter = document.createElement("center");
 		let image = document.createElement("img");
 		image.className="w-100";
@@ -56,7 +56,7 @@ function renderToScreen(jsData){
 		
 
 		let postcode = document.createElement("td");
-		postcode.className="col-4";
+		postcode.className="col-1";
 		let postcodeCenter = document.createElement("center");
 		postcodeCenter.innerText = curryHouse.postCode;
 		postcode.appendChild(postcodeCenter);
