@@ -43,7 +43,7 @@ function renderToScreen(jsData){
 		row.appendChild(position);
 
 		let imageCell = document.createElement("td");
-		imageCell.className="col-2";
+		imageCell.className="col-1";
 		let imageCenter = document.createElement("center");
 		let image = document.createElement("img");
 		image.className="w-100";
@@ -91,7 +91,7 @@ function deleteCHS() {
 
 	let request = new XMLHttpRequest();
 	// request.open("DELETE", "http://localhost:8081/CHS/" + ID);
-		request.open("DELETE", "http:"	+location.hostname+":8081/CHS/ID");
+		request.open("DELETE", "http:"+location.hostname+":8081/CHS/ID");
 	request.onload = function (){
 		renderToScreen(JSON.parse(request.response));
 	}
