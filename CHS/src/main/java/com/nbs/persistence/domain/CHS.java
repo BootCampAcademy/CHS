@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class CHS {
 
 	@Id
-	@GeneratedValue
+//	@GeneratedValue
 	private Long id;
 	private int position;
 	private String name;
