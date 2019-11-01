@@ -21,12 +21,12 @@ function renderToScreen(jsData){
 		let row = document.createElement("tr");
 		row.className="row";
 
-		let idCell = document.createElement("td");
-		idCell.className="col-2";
-		let idCenter = document.createElement("center");
-		idCenter.innerText = curryHouse.id;
-		idCell.appendChild(idCenter);
-		row.append(idCell);
+		//let idCell = document.createElement("td");
+		//idCell.className="col-2";
+		//let idCenter = document.createElement("center");
+		//idCenter.innerText = curryHouse.id;
+		//idCell.appendChild(idCenter);
+		//row.append(idCell);
 
 		let name = document.createElement("td");
 		name.className="col-2";
